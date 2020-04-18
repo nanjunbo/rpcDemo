@@ -29,7 +29,7 @@ public class HttpServer {
         context.addLifecycleListener(new Tomcat.FixContextListener());
 
         host.addChild(context);
-        engine.addChild(context);
+        engine.addChild(host);
 
         service.setContainer(engine);
         service.addConnector(connector);
