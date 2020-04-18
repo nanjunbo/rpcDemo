@@ -1,5 +1,6 @@
 package provider.provider;
 
+import protocol.dubbo.NettyServer;
 import protocol.http.HttpServer;
 import provider.impl.HelloServiceImpl;
 import provider.localRegister.LocalRegister;
@@ -13,7 +14,9 @@ public class Provider {
         LocalRegister.register(HelloService.class.getName(), HelloServiceImpl.class);
         RemoteRegister.register(HelloService.class.getName(), URL.builder().hostname("localhost").port(8080).build());
 
-        HttpServer httpServer = new HttpServer();
-        httpServer.start("localhost", 8080);
+//        HttpServer httpServer = new HttpServer();
+//        httpServer.start("localhost", 8080);
+        NettyServer nettyServer = new NettyServer();
+        nettyServer.start("localhost", 8080);
     }
 }

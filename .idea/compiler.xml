@@ -9,10 +9,8 @@
         <module name="rpcDemo" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="rpcConsumer" target="1.5" />
-      <module name="rpcProvider" target="1.5" />
-      <module name="rpcRegister" target="1.5" />
-    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="PREFER_TARGET_JDK_COMPILER" value="false" />
   </component>
 </project>
