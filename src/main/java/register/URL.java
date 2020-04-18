@@ -4,11 +4,13 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class URL {
+public class URL implements Serializable {
     private String hostname;
     private Integer port;
 }
