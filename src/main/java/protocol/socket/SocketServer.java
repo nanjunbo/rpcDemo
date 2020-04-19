@@ -13,7 +13,7 @@ public class SocketServer {
             e.printStackTrace();
             return;
         }
-        for(;;){
+        while (true){
             try {
                 final Socket socket = server.accept();
                 new SocketServerHandler().handler(socket);
