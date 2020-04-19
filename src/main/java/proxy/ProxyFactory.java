@@ -2,6 +2,7 @@ package proxy;
 
 import protocol.http.HttpClient;
 import protocol.http.Invocation;
+import protocol.socket.SocketClient;
 import provider.service.HelloService;
 import register.RemoteRegister;
 import register.URL;
@@ -17,7 +18,7 @@ public class ProxyFactory {
     public static <T> T getProxy(final Class classT){
         return (T) Proxy.newProxyInstance(classT.getClassLoader(), new Class[]{classT}, new InvocationHandler() {
             public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-                HttpClient httpClient = new HttpClient();
+                SocketClient httpClient = new SocketClient();
                 List<URL> urls = RemoteRegister.get(classT.getName());
                 //负载直接用随机
                 URL url = urls.get(new Random().nextInt(urls.size()));
