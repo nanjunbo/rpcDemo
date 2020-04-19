@@ -1,9 +1,7 @@
 package proxy;
 
-import protocol.http.HttpClient;
-import protocol.http.Invocation;
+import protocol.Invocation;
 import protocol.socket.SocketClient;
-import provider.service.HelloService;
 import register.RemoteRegister;
 import register.URL;
 

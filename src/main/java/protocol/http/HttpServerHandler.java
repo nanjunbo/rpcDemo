@@ -1,6 +1,7 @@
 package protocol.http;
 
 import org.apache.commons.io.IOUtils;
+import protocol.Invocation;
 import provider.localRegister.LocalRegister;
 
 import javax.servlet.ServletInputStream;

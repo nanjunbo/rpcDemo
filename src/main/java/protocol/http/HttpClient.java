@@ -2,6 +2,7 @@ package protocol.http;
 
 
 import org.apache.commons.io.IOUtils;
+import protocol.Invocation;
 
 import java.io.IOException;
 import java.io.InputStream;

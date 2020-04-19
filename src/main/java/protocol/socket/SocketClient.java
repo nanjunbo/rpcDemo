@@ -1,6 +1,6 @@
 package protocol.socket;
 
-import protocol.http.Invocation;
+import protocol.Invocation;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;

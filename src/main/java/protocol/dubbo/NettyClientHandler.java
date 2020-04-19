@@ -2,7 +2,7 @@ package protocol.dubbo;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
-import protocol.http.Invocation;
+import protocol.Invocation;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.Future;

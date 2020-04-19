@@ -1,4 +1,4 @@
-package protocol.http;
+package protocol;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
