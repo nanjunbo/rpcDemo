@@ -9,7 +9,7 @@ import java.lang.reflect.Method;
 import java.net.Socket;
 
 public class SocketServerHandler {
-
+    //开个线程，防止阻塞主线程
     public void handler(Socket socket){
         new Thread(new Runnable() {
             @Override
